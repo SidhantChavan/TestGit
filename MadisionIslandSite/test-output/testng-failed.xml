@@ -12,7 +12,7 @@
           <include name="getdriver"/>
           <include name="browserSetup"/>
           <include name="takescreenshot"/>
-          <include name="Valid_And_Invalid_Login" invocation-numbers="1"/>
+          <include name="Valid_And_Invalid_Login" invocation-numbers="0 1"/>
           <include name="start"/>
         </methods>
       </class> <!-- TestPages.TestLogin -->

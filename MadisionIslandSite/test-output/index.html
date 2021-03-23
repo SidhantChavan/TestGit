@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\sagar\Desktop\MadisionIslandSite\src\main\resources\testng.xml</span>
+                    <span>C:\Users\sagar\git\repository3\MadisionIslandSite\src\main\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,24 +104,15 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestPages.TestLogin" class="method navigator-link" hash-for-method="Valid_And_Invalid_Login({password=sidhant12345, emailid=sidhant007@gmail.com})">Valid_And_Invalid_Login({password=sidhant12345, emailid=sidhant007@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestPages.TestLogin" class="method navigator-link" hash-for-method="Valid_And_Invalid_Login({password=sid1234, emailid=sidhant12@gmail.com})">Valid_And_Invalid_Login({password=sid1234, emailid=sidhant12@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPages.TestLogin" class="method navigator-link" hash-for-method="Valid_And_Invalid_Login({password=sidhant12345, emailid=sidhant007@gmail.com})">Valid_And_Invalid_Login({password=sidhant12345, emailid=sidhant007@gmail.com})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -141,19 +132,49 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="Valid_And_Invalid_Login({password=sidhant12345, emailid=sidhant007@gmail.com})">
+                  </a> <!-- Valid_And_Invalid_Login({password=sidhant12345, emailid=sidhant007@gmail.com}) -->
+                  <span class="method-name">Valid_And_Invalid_Login</span>
+                  <span class="parameters">({password=sidhant12345, emailid=sidhant007@gmail.com})</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=89.0.4389.90)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8RSE6MU&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\sagar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c0c562a94aba4275067204d5d88447ca
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
+	at pages.BillingPage.setCheckoutdata(BillingPage.java:56)
+	at TestPages.TestLogin.Valid_And_Invalid_Login(TestLogin.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="Valid_And_Invalid_Login({password=sid1234, emailid=sidhant12@gmail.com})">
                   </a> <!-- Valid_And_Invalid_Login({password=sid1234, emailid=sidhant12@gmail.com}) -->
                   <span class="method-name">Valid_And_Invalid_Login</span>
                   <span class="parameters">({password=sid1234, emailid=sidhant12@gmail.com})</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;welcome-msg&apos;]//p[@class=&apos;hello&apos;]//strong&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;email&apos;]&quot;}
   (Session info: chrome=89.0.4389.90)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-8RSE6MU&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\sagar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51473}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7462b3e0d4ad95ff59d98d8270155a5f
-*** Element info: {Using=xpath, value=//div[@class=&apos;welcome-msg&apos;]//p[@class=&apos;hello&apos;]//strong}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\sagar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c0c562a94aba4275067204d5d88447ca
+*** Element info: {Using=xpath, value=//input[@id=&apos;email&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -166,9 +187,9 @@ Session ID: 7462b3e0d4ad95ff59d98d8270155a5f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.getText(Unknown Source)
-	at pages.HomePage.assert_login(HomePage.java:45)
-	at TestPages.TestLogin.Valid_And_Invalid_Login(TestLogin.java:19)
+	at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
+	at pages.Login.Login_To_Page(Login.java:41)
+	at TestPages.TestLogin.Valid_And_Invalid_Login(TestLogin.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -176,26 +197,10 @@ Session ID: 7462b3e0d4ad95ff59d98d8270155a5f
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestPages.TestLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Valid_And_Invalid_Login({password=sidhant12345, emailid=sidhant007@gmail.com})">
-                  </a> <!-- Valid_And_Invalid_Login({password=sidhant12345, emailid=sidhant007@gmail.com}) -->
-                  <span class="method-name">Valid_And_Invalid_Login</span>
-                  <span class="parameters">({password=sidhant12345, emailid=sidhant007@gmail.com})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sagar\Desktop\MadisionIslandSite\src\main\resources\testng.xml</span>
+            <span class="header-content">C:\Users\sagar\git\repository3\MadisionIslandSite\src\main\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -252,16 +257,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Valid_And_Invalid_Login')
 data.setCell(0, 2, 'TestPages.TestLogin')
-data.setCell(0, 3, 22020);
+data.setCell(0, 3, 21495);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Valid_And_Invalid_Login')
 data.setCell(1, 2, 'TestPages.TestLogin')
-data.setCell(1, 3, 11585);
+data.setCell(1, 3, 10794);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -294,29 +299,31 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">getdriver</span>
-                <span class="method-start">5918 ms</span>
+                <span class="method-start">6246 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">browserSetup</span>
-                <span class="method-start">5935 ms</span>
+                <span class="method-start">6262 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Valid_And_Invalid_Login({password=sidhant12345, emailid=sidhant007@gmail.com})</span>
-                <span class="method-start">6674 ms</span>
+                <span class="method-start">7017 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takescreenshot([TestResult name=Valid_And_Invalid_Login status=SUCCESS method=TestLogin.Valid_And_Invalid_Login(jav...)</span>
-                <span class="method-start">32089 ms</span>
+                <span class="method-name">takescreenshot([TestResult name=Valid_And_Invalid_Login status=FAILURE method=TestLogin.Valid_And_Invalid_Login(jav...)</span>
+                <span class="method-start">31902 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Valid_And_Invalid_Login({password=sid1234, emailid=sidhant12@gmail.com})</span>
-                <span class="method-start">36298 ms</span>
+                <span class="method-start">35282 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takescreenshot([TestResult name=Valid_And_Invalid_Login status=FAILURE method=TestLogin.Valid_And_Invalid_Login(jav...)</span>
-                <span class="method-start">51304 ms</span>
+                <span class="method-start">49759 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -44,7 +44,7 @@ public class TestBase {
 		data = new Properties();
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("C:\\Users\\sagar\\Desktop\\MadisionIslandSite\\src\\main\\resources\\data.properties");
+			fis = new FileInputStream("src\\main\\resources\\data.properties");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
