@@ -41,7 +41,7 @@ public class BillingPage {
 	@FindBy(xpath = "//button[@onclick='payment.save()']")
 	private WebElement paymentcontinueBy;
 	@FindBy(xpath = "//button[@class='button btn-checkout']")
-	private WebElement chechoutBy;
+	private WebElement checkoutBy;
 
 	public BillingPage(WebDriver driver) {
 		this.driver = driver;
@@ -63,7 +63,7 @@ public class BillingPage {
 			shippingmethodBy.click();
 			shippingcontinueBy.click();
 			paymentcontinueBy.click();
-			chechoutBy.click();
+			checkoutBy.click();
 		} catch (NoSuchElementException exception) {
 			System.out.println(exception.getStackTrace());
 		}
